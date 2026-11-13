@@ -154,7 +154,7 @@ impl TestSummary {
 
     pub(crate) fn get_errors(&mut self) -> &Vec<(String, TestError)> {
         self.test_errors.sort_by(|a, b| -> Ordering {
-            human_sort::compare(&a.0, &b.0)
+            numeric_sort::cmp(&a.0, &b.0)
         });
         &self.test_errors
     }

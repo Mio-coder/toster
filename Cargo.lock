@@ -392,12 +392,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "human-sort"
-version = "0.2.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "140a09c9305e6d5e557e2ed7cbc68e05765a7d4213975b87cb04920689cc6219"
-
-[[package]]
 name = "indexmap"
 version = "2.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -540,6 +534,12 @@ name = "number_prefix"
 version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "830b246a0e5f20af87141b25c173cd1b609bd7779a4617d6ec582abaf90870f3"
+
+[[package]]
+name = "numeric-sort"
+version = "0.1.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6d5fd3fb42db9453f4995402fd23a080834cd706e63b018e62ea6acd6ee5d24c"
 
 [[package]]
 name = "object"
@@ -851,10 +851,10 @@ dependencies = [
  "ctrlc",
  "directories",
  "human-panic",
- "human-sort",
  "indicatif",
  "is_executable",
  "memfile",
+ "numeric-sort",
  "rayon",
  "tempfile",
  "terminal_size",
